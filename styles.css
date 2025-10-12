@@ -12,9 +12,8 @@ body {
   color: #333;
 }
 
-/* Hero */
 .hero {
-  background: linear-gradient(to right, #4a69bd, #6a89cc);
+  background: linear-gradient(to right, #af2ac1, #af2ac1);
   color: white;
   padding: 4rem 2rem;
   text-align: center;
@@ -55,14 +54,14 @@ body {
 
 .about h2 {
   margin-bottom: 1rem;
-  color: #4a69bd;
+  color: #af2ac1;
 }
 
 /* Course Page */
 .page-header {
   text-align: center;
   padding: 2rem;
-  background: #6a89cc;
+  background: #af2ac1;
   color: white;
 }
 
@@ -111,7 +110,7 @@ footer {
 .btn-large {
   padding: 1rem 2rem;
   font-size: 1.2rem;
-  background: #4a69bd;
+  background: #af2ac1;
 }
 
 .logo {
