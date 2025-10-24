@@ -135,3 +135,22 @@ footer {
 .contact-email a:hover {
   text-decoration: underline;
 }
+
+.course-previews {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin: 50px 0;
+}
+
+.course-preview {
+  width: 600px; /* 50% larger than before (was 400px) */
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s ease;
+}
+
+.course-preview:hover {
+  transform: scale(1.03);
+}
