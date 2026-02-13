@@ -1,0 +1,307 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9fb;
+  color: #333;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(to right, #af2ac1, #af2ac1);
+  color: white;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.hero p {
+  max-width: 800px;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+/* Hero content: text + photo wrapper */
+.hero-content {
+  display: flex;
+  justify-content: center;
+}
+
+.hero-text-photo {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px; /* space between text and photo */
+  max-width: 1200px;
+  width: 100%;
+}
+
+.hero-text {
+  flex: 1;
+}
+
+/* Hero Photo */
+.hero-photo img {
+  width: 450px;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  margin-top: 0; /* reset large top margin */
+}
+
+/* Shift hero photo down on desktop */
+@media (min-width: 769px) {
+  .hero-photo img {
+    margin-top: 300px; /* adjust as needed to line up visually */
+  }
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  background: #38ada9;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #079992;
+}
+
+/* About Section */
+.about {
+  padding: 3rem 2rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.about h2 {
+  margin-bottom: 1rem;
+  color: #af2ac1;
+}
+
+/* Course Page */
+.page-header {
+  text-align: center;
+  padding: 2rem;
+  background: #af2ac1;
+  color: white;
+}
+
+.course-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
+.course-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.course-card h3 {
+  margin-bottom: 1rem;
+  color: #222;
+}
+
+.course-img {
+  grid-column: 1 / -1;
+  max-width: 600px;
+  margin: 2rem auto;
+  display: block;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #eee;
+  margin-top: 2rem;
+}
+
+.start-container {
+  text-align: center;
+  margin: 3rem 0;
+}
+
+.btn-large {
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  background: #af2ac1;
+}
+
+.logo {
+  max-width: 360px;
+  margin-bottom: 1rem;
+}
+
+.contact-email {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  text-align: right;
+  color: white;
+  font-size: 0.9rem;
+  line-height: 1.3;
+}
+
+.contact-email a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contact-email a:hover {
+  text-decoration: underline;
+}
+
+.course-previews {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin: 50px 0;
+}
+
+.course-preview {
+  width: 600px; /* 50% larger than before (was 400px) */
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s ease;
+}
+
+.course-preview:hover {
+  transform: scale(1.03);
+}
+
+.developer-credit {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #888;
+}
+
+.developer-credit a {
+  color: #888;
+  text-decoration: none;
+}
+
+.developer-credit a:hover {
+  text-decoration: underline;
+}
+
+/* Pricing Section */
+.pricing-section {
+  text-align: center;
+  padding: 3rem 2rem;
+  background: #f3f0f6;
+}
+
+.pricing-section h2 {
+  color: #af2ac1;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 900px;
+  margin: auto;
+}
+
+.pricing-card {
+  background: white;
+  border-radius: 14px;
+  padding: 2rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  border: 3px solid #af2ac1; /* purple border for BOTH */
+}
+
+.pricing-card.featured {
+  transform: scale(1.03);
+}
+
+.pricing-card h3 {
+  margin-bottom: 1rem;
+  color: #222;
+}
+
+.price {
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #af2ac1;
+}
+
+.price span {
+  font-size: 1rem;
+  font-weight: normal;
+  color: #666;
+}
+
+.sub-price {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.pricing-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.pricing-card ul li {
+  margin: 0.5rem 0;
+}
+
+/* Responsive Fixes */
+@media (max-width: 768px) {
+  .hero {
+    text-align: center;
+    padding: 2rem 1rem;
+  }
+
+  .hero-text-photo {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-photo img {
+    width: 200px;
+    margin-top: 20px; /* stacked photo spacing */
+  }
+
+  .hero-text {
+    max-width: 95%;
+    text-align: center;
+  }
+
+  .logo {
+    max-width: 250px;
+  }
+}
