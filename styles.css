@@ -144,6 +144,18 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
+@media (max-width: 768px) {
+  .course-previews {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .course-preview {
+    width: 90%;
+    max-width: 400px;
+  }
+}
+
 /* Footer */
 footer {
   text-align: center;
