@@ -2,8 +2,20 @@
 Thumbs.db
 desktop.ini
 .DS_Store
+Google SSO secret key.txt
+kotobee serial.txt
+PMHNP Course Ebook 2.pdf
+PMHNP Course Ebook Final.pdf
+PMHNP Course eBook Numbered.pdf
+PMHNP Course Ebook.pdf
+PMHNP eBook.kpub2
+stripe secret key.txt
+stripe_backup_code.txt
+yahoo_stripe_backup_code.txt
+
 
 # Ignore editor settings
 .vscode/
 videos/
 Shorts/
+PMHNP eBook Web App/
